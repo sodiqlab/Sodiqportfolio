@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sodiq Porfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">  
+        <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+        <!-- Add the button element below -->
+        <button id= 'magnifybutton' onclick="goToNewPage()"> Explore</button>
+    
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>
+    
+    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+        <table>
+            <tr>
+                <td id="logo">Sodiq Mustapha</td>
+                <td id="navigation">
+                    <a href="#work">Work</a>
+                    <a href="#bio">About</a>
+                    <a href="#top_part">Socials</a>
+                    <a href="#contact">contact</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <table id="top_part">
+        <tr>
+            <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
+                <h1>A software engineer enamored with the concept of creation</h1>
+                <a href = "#contact">
+                <button class="btn_one" >Hire Me</button><br>
+                </a>
+                <table>
+                    <tr> 
+                        <td class="animated zoomIn" style="animation-delay:2.4s;">
+                            <a class="social" href="https://www.linkedin.com/in/sodiq-mustapha-770a23177/" target="_blank">
+                              <i class="fab fa-linkedin"></i>
+                            </a>
+                          </td>                          
+                        <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social" href= "https://github.com/sodiqlab?tab=repositories" target= '_blank'><i class="fab fa-github"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:3.0s;"><a class="social" href= "https://medium.com/@sodiqM"><i class="fab fa-medium"></i></a></td>
+                    </tr>
+                </table>
+            </td>
+            <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
+        </tr>
+    </table>
+    <div id="work">
+        <h1>work</h1>
+        <div id="photos">
+            <div class="image-container">
+                <img onclick="magnify($(this).attr('src'))" src="/recovery.png">
+              </div>
+              
+            <img onclick="magnify($(this).attr('src'))" src="">
+            
+            <img onclick="magnify($(this).attr('src'))" src="">
+        </div>
+    </div>
+    <div id="bio">
+        <h1>about</h1>
+        <h2>
+            I have a passion for all things art, and coding is an art in my eyes. I am well-versed in program testing and debugging with superior skill . Insightful troubleshooter with thousands of hours of experience collaborating with testing teams and design teams to ensure successful integration and a solid user experience..
+        </h2>
+        <h2>
+            
+In my pursuit of artistic expression, I find that coding is an extraordinary form of art that captivates my soul. Just like a painter meticulously brushes strokes on a canvas, I craft elegant lines of code to breathe life into digital creations. The canvas of my imagination extends beyond conventional boundaries, allowing me to explore innovative solutions and push the boundaries of what's possible.
+        </h2>
+    </div>
+    <div id="contact">
+        <h1>contact</h1>
+            <table>
+                <tr>
+                    <td>
+                        <div id="inner_div">
+                            <table id="inner_table">
+                                <tr>
+                                    <td><i class="fas fa-phone"></i> &nbsp; +1 718 219 0589</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-at"></i> &nbsp; sodiqqmustapha@gmail.com</td>
+                                </tr>
+                                 
+                                <tr>
+                                    <td><i class="fas fa-map-marker-alt"></i>
+                                    <div id="address">
+                                        9227 165th street,<br>
+                                        jamaica,NY<br>
+                                        United States
+                                    </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="social"><i class="fab fa-github" href="https://github.com/sodiqlab?tab=repositories"></i></a>
+                                        <a class="social"><i class="fab fa-linkedin" href= "https://www.linkedin.com/in/sodiq-mustapha-770a23177/" ></i></a>
+                                        <a class="social" href= "https://medium.com/@sodiqM"><i class="fab fa-medium"></i></a>
+                                       
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td>
+                        <form>
+                            <input type="text" placeholder="name" required>
+                            <input type="email" placeholder="email" required><br>
+                            <textarea placeholder="your message" required rows="5"></textarea><br>
+                            <button class="btn_one">send</button>
+                        </form> 
+                    </td>
+                </tr>
+            </table>
+    </div>
+    <div id="footer">
+        Grown in NYC<br> <a href="https://github.com/sodiqlab?tab=repositories">sodiqlabe</a>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
